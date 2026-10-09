@@ -1,0 +1,109 @@
+/* --- Custom Theme Styling based on your Palette --- */
+
+/* Main App Background & Default Text */
+.stApp {
+    background-color: #f5f2ed !important;
+    color: #292624 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar Styling */
+[data-testid="stSidebar"] {
+    background-color: #ffffff !important;
+    border-right: 1px solid #d0c7bc !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #292624 !important;
+    font-weight: 700 !important;
+}
+
+/* Dashboard Metric Cards Styling */
+[data-testid="stMetric"] {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f2ed 100%) !important;
+    border: 1px solid #d0c7bc !important;
+    border-left: 5px solid #d9ad52 !important;
+    padding: 15px 20px !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(41, 38, 36, 0.05) !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #514943 !important;
+    font-weight: 600 !important;
+}
+
+[data-testid="stMetricValue"] {
+    color: #292624 !important;
+    font-weight: 800 !important;
+}
+
+/* Form Containers */
+[data-testid="stForm"] {
+    background-color: #ffffff !important;
+    border: 1px solid #d0c7bc !important;
+    border-radius: 14px !important;
+    padding: 25px !important;
+    box-shadow: 0 6px 18px rgba(41, 38, 36, 0.04) !important;
+}
+
+/* Primary Action & Submit Buttons */
+.stButton > button, div.stFormSubmitButton > button {
+    background: linear-gradient(135deg, #d9ad52 0%, #c49942 100%) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 0.6rem 1.2rem !important;
+    box-shadow: 0 4px 10px rgba(217, 173, 82, 0.25) !important;
+    transition: all 0.3s ease !important;
+}
+
+.stButton > button:hover, div.stFormSubmitButton > button:hover {
+    background: linear-gradient(135deg, #e5b95e 0%, #d9ad52 100%) !important;
+    box-shadow: 0 6px 15px rgba(217, 173, 82, 0.4) !important;
+    transform: translateY(-1px);
+}
+
+/* Tabs Styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px !important;
+    background-color: #d0c7bc !important;
+    padding: 6px !important;
+    border-radius: 10px !important;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background-color: transparent !important;
+    color: #3b3632 !important;
+    border-radius: 6px !important;
+    font-weight: 600 !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: #ffffff !important;
+    color: #292624 !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05) !important;
+    border-bottom: 2px solid #d9ad52 !important;
+}
+
+/* Input Fields & Text Inputs */
+.stTextInput > div > div > input, .stNumberInput > div > div > input {
+    background-color: #ffffff !important;
+    border: 1px solid #d0c7bc !important;
+    border-radius: 8px !important;
+    color: #292624 !important;
+}
+
+.stTextInput > div > div > input:focus, .stNumberInput > div > div > input:focus {
+    border-color: #d9ad52 !important;
+    box-shadow: 0 0 0 2px rgba(217, 173, 82, 0.2) !important;
+}
+
+/* Dataframes and Tables */
+[data-testid="stDataFrame"] {
+    border: 1px solid #d0c7bc !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}

@@ -1,0 +1,397 @@
+
+
+
+
+/* =====================================================
+   PREMIUM STUDENT PREDICTION SYSTEM
+   Theme: Midnight Navy + Electric Blue + Soft White
+===================================================== */
+
+:root {
+    --primary: #6366f1;
+    --primary-dark: #4338ca;
+    --accent: #38bdf8;
+    --success: #10b981;
+    --danger: #f43f5e;
+    --background: #f4f7ff;
+    --surface: #ffffff;
+    --text: #172554;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --shadow: 0 12px 35px rgba(30, 41, 100, 0.08);
+}
+
+/* ================= GLOBAL ================= */
+
+.stApp {
+    background:
+        radial-gradient(ellipse at top left,
+            rgba(99, 102, 241, 0.10), transparent 40%),
+        radial-gradient(ellipse at bottom right,
+            rgba(56, 189, 248, 0.09), transparent 35%),
+        var(--background);
+    color: var(--text);
+    font-family: "Segoe UI", "Inter", sans-serif;
+}
+
+.block-container {
+    max-width: 1350px;
+    padding-top: 2.2rem;
+    padding-bottom: 4rem;
+}
+
+/* ================= TYPOGRAPHY ================= */
+
+h1 {
+    color: #172554 !important;
+    font-size: 2.45rem !important;
+    font-weight: 850 !important;
+    letter-spacing: -1.2px;
+}
+
+h2 {
+    color: #243b80 !important;
+    font-weight: 750 !important;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    color: #3347a9 !important;
+    font-weight: 700 !important;
+}
+
+p, label {
+    line-height: 1.65;
+}
+
+[data-testid="stCaptionContainer"] {
+    color: var(--muted);
+}
+
+/* ================= SIDEBAR ================= */
+
+[data-testid="stSidebar"] {
+    background: linear-gradient(
+        165deg,
+        #101936 0%,
+        #172554 50%,
+        #312e81 100%
+    );
+    border-right: 1px solid rgba(255,255,255,0.08);
+}
+
+[data-testid="stSidebar"] * {
+    color: #f8fafc;
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #ffffff !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] label {
+    padding: 10px 13px;
+    border-radius: 10px;
+    transition: background 0.2s ease;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] label:hover {
+    background: rgba(255,255,255,0.12);
+}
+
+/* ================= BUTTONS ================= */
+
+.stButton > button,
+.stFormSubmitButton > button {
+    background: linear-gradient(
+        115deg,
+        #6366f1,
+        #4338ca
+    );
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 11px;
+    min-height: 44px;
+    padding: 0.65rem 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.15px;
+    box-shadow: 0 5px 14px rgba(79,70,229,0.18);
+    transition: all 0.22s ease;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background: linear-gradient(
+        115deg,
+        #4f46e5,
+        #3730a3
+    );
+    box-shadow: 0 9px 22px rgba(79,70,229,0.28);
+    transform: translateY(-2px);
+    border-color: transparent;
+}
+
+.stButton > button:active,
+.stFormSubmitButton > button:active {
+    transform: translateY(0);
+}
+
+.stButton > button:focus-visible,
+.stFormSubmitButton > button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+/* ================= INPUT FIELDS ================= */
+
+.stTextInput input,
+.stNumberInput input,
+.stTextArea textarea {
+    background: #ffffff !important;
+    color: #172554 !important;
+    border: 1px solid #d7def0 !important;
+    border-radius: 10px !important;
+    min-height: 43px;
+    transition: all 0.2s ease;
+}
+
+.stTextInput input:hover,
+.stNumberInput input:hover,
+.stTextArea textarea:hover {
+    border-color: #a5b4fc !important;
+}
+
+.stTextInput input:focus,
+.stNumberInput input:focus,
+.stTextArea textarea:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.13) !important;
+}
+
+/* ================= FORMS ================= */
+
+[data-testid="stForm"] {
+    background: rgba(255,255,255,0.88);
+    border: 1px solid rgba(203,213,225,0.7);
+    border-radius: 18px;
+    padding: 26px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+}
+
+[data-testid="stForm"] label {
+    color: #334155;
+    font-weight: 600;
+}
+
+/* ================= LOGIN TABS ================= */
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 8px;
+    background: rgba(226,232,240,0.65);
+    padding: 6px;
+    border-radius: 13px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: transparent;
+    color: #475569;
+    border-radius: 9px;
+    padding: 11px 19px;
+    font-weight: 650;
+    transition: all 0.2s ease;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    color: #4338ca;
+    background: rgba(255,255,255,0.7);
+}
+
+.stTabs [aria-selected="true"] {
+    background: #ffffff !important;
+    color: #4338ca !important;
+    box-shadow: 0 3px 10px rgba(15,23,42,0.07);
+}
+
+/* ================= DASHBOARD METRICS ================= */
+
+[data-testid="stMetric"] {
+    background: linear-gradient(
+        145deg,
+        #ffffff,
+        #f8faff
+    );
+    border: 1px solid #e0e7ff;
+    border-radius: 17px;
+    padding: 22px 20px;
+    box-shadow: 0 7px 23px rgba(30,41,100,0.055);
+    transition: all 0.22s ease;
+}
+
+[data-testid="stMetric"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(79,70,229,0.11);
+    border-color: #c7d2fe;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #64748b !important;
+    font-size: 0.92rem;
+    font-weight: 650;
+}
+
+[data-testid="stMetricValue"] {
+    color: #3730a3 !important;
+    font-size: 2rem;
+    font-weight: 850;
+}
+
+/* ================= DATA TABLES ================= */
+
+[data-testid="stDataFrame"] {
+    background: #ffffff;
+    border: 1px solid #e0e7ff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(30,41,100,0.045);
+}
+
+/* ================= DOWNLOAD BUTTONS ================= */
+
+.stDownloadButton > button {
+    background: linear-gradient(
+        110deg,
+        #059669,
+        #047857
+    );
+    color: #ffffff !important;
+    border: none;
+    border-radius: 10px;
+    min-height: 43px;
+    font-weight: 700;
+    box-shadow: 0 5px 14px rgba(5,150,105,0.15);
+    transition: all 0.2s ease;
+}
+
+.stDownloadButton > button:hover {
+    background: linear-gradient(
+        110deg,
+        #047857,
+        #065f46
+    );
+    box-shadow: 0 8px 20px rgba(5,150,105,0.25);
+    transform: translateY(-2px);
+}
+
+/* ================= ALERTS ================= */
+
+[data-testid="stAlert"] {
+    border-radius: 12px;
+    border-width: 1px;
+    padding: 13px 16px;
+}
+
+/* ================= SELECT BOXES ================= */
+
+[data-baseweb="select"] > div {
+    border-radius: 10px;
+    border-color: #d7def0;
+}
+
+[data-baseweb="select"] > div:focus-within {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99,102,241,0.12);
+}
+
+/* ================= CHECKBOXES ================= */
+
+[data-testid="stCheckbox"] label {
+    color: #334155;
+}
+
+/* ================= DIVIDERS ================= */
+
+hr {
+    border-color: #e0e7ff !important;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ================= CHARTS ================= */
+
+[data-testid="stVegaLiteChart"],
+[data-testid="stArrowVegaLiteChart"] {
+    background: rgba(255,255,255,0.88);
+    border: 1px solid #e0e7ff;
+    border-radius: 15px;
+    padding: 12px;
+    box-shadow: 0 5px 18px rgba(30,41,100,0.04);
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eef2ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a5b4fc;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6366f1;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+
+@media (max-width: 768px) {
+    .block-container {
+        padding: 1.1rem 0.8rem 2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+        letter-spacing: -0.5px;
+    }
+
+    h2 {
+        font-size: 1.4rem !important;
+    }
+
+    [data-testid="stForm"] {
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    [data-testid="stMetric"] {
+        padding: 13px;
+    }
+
+    [data-testid="stMetricValue"] {
+        font-size: 1.5rem;
+    }
+
+    .stButton > button,
+    .stFormSubmitButton > button {
+        width: 100%;
+    }
+}
+
+/* ================= REDUCED MOTION ================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+        scroll-behavior: auto !important;
+    }
+}
